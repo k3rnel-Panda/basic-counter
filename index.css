@@ -12,14 +12,23 @@ header {
   margin: 3rem 0;
 }
 
-.counters {
-  display: flex;
-  justify-content: space-around;
+.count-display {
   width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
 }
 
-.counter {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+#counter-list {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 100vw;
+  overflow-x: scroll;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.list-group-item {
+  text-align: center;
+  margin: 1rem;
 }

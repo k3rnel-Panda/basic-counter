@@ -6,46 +6,32 @@
 	<title>Counter</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
 </head>
 <body>
 	<header>
 		<h1>Basic Counter</h1>
-		<h2>(Class implementation)</h2>
 	</header>
-	<div class="counters">
-		<div class="counter counter-1">
-			<h1 class="counter-display">0</h1>
-			<div class="btn-group" role="group" aria-label="Basic example">
-				<button type="button" class="btn btn-danger counter-decrement">
-					<span class="glyphicon glyphicon-arrow-down" style="font-size: 25px"></span>
-			    </button>
-				<button type="button" class="btn btn-secondary counter-reset">
-					<span class="glyphicon glyphicon-refresh" style="font-size: 25px"></span>
-				</button>
-				<button type="button" class="btn btn-primary counter-increment">
-					<span class="glyphicon glyphicon-arrow-up" style="font-size: 25px"></span>
-				</button>
+	<form>
+			<div class="form-group">
+				<label for="newCounter">Counter Name</label>
+				<input 
+					type="text" 
+					class="form-control" 
+					id="new-counter" 
+					aria-describedby="counterHelp" 
+					placeholder="Enter new counter name"
+				/>
 			</div>
-		</div>
-		<div class="counter counter-2">
-			<h1 class="counter-display">0</h1>
-			<div class="btn-group" role="group" aria-label="Basic example">
-				<button type="button" class="btn btn-danger counter-decrement">
-					<span class="glyphicon glyphicon-arrow-down" style="font-size: 25px"></span>
-				</button>
-				<button type="button" class="btn btn-secondary counter-reset">
-					<span class="glyphicon glyphicon-refresh" style="font-size: 25px"></span>
-				</button>
-				<button type="button" class="btn btn-primary counter-increment">
-					<span class="glyphicon glyphicon-arrow-up" style="font-size: 25px"></span>
-				</button>
-			</div>
-		</div>
-	</div>
-	<script src="index.js"></script>
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<button type="submit" class="btn btn-primary">Create</button>
+	</form>
+	<ul id="counter-list"></ul>
+	<div class="counters"></div>
+	<!-- scripts -->
+	<script src="js/Counter.js"></script>
+	<script src="js/index.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
